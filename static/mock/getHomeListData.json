@@ -1,0 +1,45 @@
+{
+    "status": "success",
+    "data": {
+        "article": [
+            {
+                "id": 1,
+                "title": "四六级考试必过复习笔记",
+                "content": "17个必考考点,最全四六级改革备考资料(a满满の干货）",
+                "authorName": "王秋实",
+                "authorAvatar": "../assets/banner.jpg",
+                "authorLabel": "南京大学学霸lady",
+                "timeLength": "27"
+            },
+            {
+                "id": 2,
+                "title": "四六级考试必过复习笔记",
+                "content": "17个必考考点,最全四六级改革备考资料(a满满の干货）",
+                "authorName": "王秋实",
+                "authorAvatar": "../assets/banner.jpg",
+                "authorLabel": "南京大学学霸lady",
+                "timeLength": "27"
+            }
+        ],
+        "handpick": [
+            {
+                "title": "精选专题",
+                "data": [
+                    {
+                        "id": 1,
+                        "image": "",
+                        "title": "毛泽东盖伦",
+                        "intro": "听说，不挂科的都看过"
+                    },
+                    {
+                        "id": 2,
+                        "image": "",
+                        "title": "毛泽东盖伦",
+                        "intro": "听说，不挂科的都看过"
+                    }
+                ]
+            }
+        ]
+        
+    }
+}
