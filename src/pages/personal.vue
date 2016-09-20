@@ -118,7 +118,7 @@
         }
     }
 </style>
-<script type="text/ecmascript-6">
+<script>
     import Vue from 'vue';
     import { Header } from 'mint-ui';
     import res from '../resource';
