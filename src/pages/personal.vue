@@ -44,11 +44,7 @@
                 </div>
              </div>
          </div>
-        
-        <div>
-            <input type="checkbox" v-model="check ? false : true">
-        </div>
-
+    
     </div>
 </template>
 <style lang="scss" rel="stylesheet/scss" scoped>

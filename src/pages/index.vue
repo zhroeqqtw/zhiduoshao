@@ -45,18 +45,9 @@
              </div>
          </div>
         
-        <div>
-            <input type="checkbox" v-model="check ? false : true">
-        </div>
-
     </div>
 </template>
 <style lang="scss" rel="stylesheet/scss" scoped>
-    .mint-header {
-        background: #fff;
-        color: #333;
-    }
-
     .swipe-item img {
         width: 100%;
     }
@@ -118,7 +109,7 @@
         }
     }
 </style>
-<script type="text/ecmascript-6">
+<script>
     import Vue from 'vue';
     import { Header } from 'mint-ui';
     import res from '../resource';

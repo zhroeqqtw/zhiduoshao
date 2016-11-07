@@ -21,7 +21,12 @@
                 <span class="timeLength">{{detail.timeLength}}分钟</span>学完
             </p>
 
-            <mt-button type="primary" size="large">赞助1元并学习</mt-button>
+            <mt-button v-show="!detail.isBuy" type="primary" size="large">赞助1元并学习</mt-button>
+
+            <p v-show="detail.isBuy" style="text-align: center;">
+                <span class=success-icon></span>知识点GET
+            </p>
+
         </div>
 
         <div class="content">
@@ -30,16 +35,13 @@
         </div>
     </div>
 </template>
-<style lang="scss" rel="stylesheet/scss" scoped>
-    .mint-header {
-        background: #fff;
-        color: #333;
-    }
+<style  scoped lang="scss" rel="stylesheet/scss">
     .author {
         background: #fff;
         padding: 12px;
         border-top: #ddd solid 1px;
         margin-bottom: 12px;
+        overflow: hidden;
     }
 
     .authorBlock {
@@ -63,6 +65,7 @@
         width: 80px;
         height: 80px;
         border-radius: 50%;
+        background: #666;
     }
 
     .intro {
@@ -100,8 +103,18 @@
 
         }
     }
+    .success-icon {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background: #60be29;
+        border-radius: 50%;
+        vertical-align: middle;
+        margin-right: 8px;
+    }
+
 </style>
-<script type="text/ecmascript-6">
+<script >
     import Vue from 'vue';
     import { Header } from 'mint-ui';
     import res from '../resource';
@@ -129,7 +142,7 @@
             res.request('getArticleDetail').then(({data: res})=>{
                 if (res.status == 'success') {
                     this.detail = res.data;
-                    console.log(Router)
+                    console.log(res)
                 } else {
                     Toast('请求banner信息失败');
                 }

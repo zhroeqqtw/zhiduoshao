@@ -3,6 +3,7 @@ import App from './App';
 import Index from './pages/index.vue';
 import Find from './pages/find.vue';
 import Detail from './pages/detail.vue';
+import Me from './pages/me';
 import VueResource from 'vue-resource';
 import VueRouter from 'vue-router';
 /* eslint-disable no-new */
@@ -25,6 +26,9 @@ router.map({
   },
   '/detail/:articleId': {
     component: Detail
+  },
+  '/me': {
+    component: Me
   }
 });
 

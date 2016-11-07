@@ -14,7 +14,7 @@ export default {
 };
 </script>
 
-<style lang="scss" rel="stylesheet/scss">
+<style  rel="stylesheet/scss" lang="scss">
 html {
   height: 100%;
 }
@@ -23,7 +23,6 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   margin: 0;
   background: #ddd;
@@ -59,5 +58,10 @@ a {
 }
 .color-gray {
   color: #999;
+}
+
+body .mint-header {
+    background: #fff;
+    color: #333;
 }
 </style>
